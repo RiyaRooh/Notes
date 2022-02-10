@@ -22,6 +22,18 @@ typeof ""             // Returns "string"
 typeof "John"         // Returns "string"
 typeof "John Doe"     // Returns "string"
 ```
+
+## `Number.isInteger()`
+>- Let's you know if a value is a number by returning true/false
+```js
+Number.isInteger(4) // => true
+Number.isInteger('dksdfh') // => false
+```
+## `String()`
+>- Parse a number into a string
+```js
+String(123) // => '123'
+```
 ## In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
 ```js
  let car;    // Value is undefined, type is undefined

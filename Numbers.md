@@ -70,7 +70,19 @@ parseInt("years 10"); // => NaN
 `MAX_VALUE` returns the largest possible number in JavaScript
 `MIN_VALUE` returns the lowest possible number in JavaScript
 
+## Check if a number isPrime 
 
+```js
+let x = 5;
+let isPrime = true;
+
+for (let i = 2; i < x; i++>){
+    if(x % i === 0){
+        isPrime = false;
+        break;
+    }
+}
+```
 
 
 

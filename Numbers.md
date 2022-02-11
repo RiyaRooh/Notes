@@ -84,6 +84,13 @@ for (let i = 2; i < x; i++>){
 }
 ```
 
+## Get the second number only in an equation
+```js
+9 + 9 = 18 
+(9 + 9) % 10 = 8
+```
+
+
 
 
 

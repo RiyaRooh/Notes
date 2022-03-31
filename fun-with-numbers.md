@@ -1,25 +1,41 @@
-# Numbers
-> JavaScript uses the `+` operator for both addition and concatenation.Numbers are added. Strings are concatenated.
->- If you add two strings, the result will be a string concatenation
->- If you add a number and a string, the result will be a string concatenation
->- If you add a string and a number, the result will be a string concatenation
-## NaN - Not a Number
-`NaN` is a JavaScript reserved word indicating that a number is not a legal number.
+#  Math Methods
 
-Trying to do arithmetic with a non-numeric string will result in `NaN` (Not a Number)
+## Math.round()
+>- `Math.round(x)` returns the nearest integer
+## Math.ceil()
+>- `Math.ceil(x)` returns the value of x rounded **up** to its nearest integer
+## Math.floor()
+>- `Math.floor(x)` returns the value of x rounded **down** to its nearest integer
+## Math.trunc()
+>- `Math.trunc(x)` returns the integer part of x
+```js
+Math.trunc(4.9); // => 4
+```
+## Math.pow()
+>- `Math.pow(x, y)` returns the value of x to the power of y
+## Math.sqrt()
+>- `Math.sqrt(x)` returns the square root of x
+## Math.min() and Math.max()
+>- `Math.min()` and `Math.max()` can be used to find the lowest or highest value in a list of arguments
 
-`NaN` is a number: `typeof NaN` returns number
-```js
-typeof NaN; // => number
+## Math.abs()
+>- `The Math.abs()` function returns the absolute value of a number. That is, it returns x if x is positive or zero, and the negation of x if x is negative.
+
 ```
-## The `toString()` Method
-The `toString()` method returns a number as a string
-```js
-let x = 123;
-x.toString(); // => 123
-(123).toString(); // => 123
-(100 + 23).toString(); // => 123
+function difference(a, b) {
+  return Math.abs(a - b);
+}
+
+console.log(difference(3, 5));
+// expected output: 2
+
+console.log(difference(5, 3));
+// expected output: 2
+
+console.log(difference(1.23456, 7.89012));
+// expected output: 6.6555599999999995
 ```
+
 ## The `toFixed()` Method
 `toFixed()` returns a string, with the number written with a specified number of decimals
 ```js
@@ -98,7 +114,4 @@ function(isPrimeNumber(n)){
 8 + 8 = 16
 (8 + 8) % 10 = 6
 ```
-
-
-
 

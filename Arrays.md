@@ -368,3 +368,19 @@ console.log(pets.includes('cat'));
 console.log(pets.includes('at'));
 // expected output: false
 ```
+
+# Make a matrix
+```js
+let matrix = [];
+
+for (let i = 0; i < mapHeight; i++) {
+
+    matrix[i] = [];
+    
+    for (let j = 0; j < givenInput; j++) {
+        matrix[i][j] = (i * givenInput) + j + 1;
+    }
+}
+
+console.log(matrix);
+```
